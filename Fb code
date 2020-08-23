@@ -1,0 +1,575 @@
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<style>
+
+.header
+{
+
+background-color:hsl(220,36%,44%);
+padding-left:260px;
+padding-bottom:20px;
+height:8%;
+font-size:20px;
+margin:0 0 0 0;
+color:white;
+display: flex;
+flex-wrap: nowrap;
+font-family:arial,sans-serif;
+}
+
+.box1 
+{
+  width: 50%;
+ float:left;
+}
+.box2 
+{  padding-top:9px;
+   padding-left:0px;
+   margin-right:20px;
+   font-size:12px;
+   float:left;
+   width: 10%;
+}
+.box3 
+{  padding-top:9px;
+   margin-left:20px;
+   font-size:12px;
+   float:left;
+   width: 40%;
+}
+.form1
+{
+margin-right:11px;
+margin-top:6px;
+display:inline;
+}
+.input1
+{
+
+outline:none;
+margin-top:5px;
+width:150px;
+margin-bottom:5px;
+
+}
+a
+{
+font-size:12px;
+margin-top:15px;
+color:hsl(222,34%,80%);
+}
+a:link {
+  margin-top:5px;
+  color:hsl(222,34%,80%);
+  text-decoration:none;
+}
+
+/* visited link */
+a:visited 
+{
+  color:hsl(222,34%,80%);
+  margin-top:5px;
+}
+
+/* mouse over link */
+a:hover {
+color:hsl(222,34%,80%);
+margin-top:5px;
+text-decoration:underline;
+}
+
+/* selected link */
+a:active {
+margin-top:5px;
+  color:hsl(222,34%,80%);
+}
+a.link1 
+{
+
+color:white;
+}
+
+a.link1:link, a.link1:visited {
+  background-color:hsl(217,60%,44%);
+  color: white;
+  padding: 4px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border:1px solid hsl(0,0%,30%);
+border-radius:3px;
+}
+
+a.link1:hover, a.link1:active {
+  background-color: hsl(220,36%,44%);
+}
+
+
+
+
+
+
+
+.content
+{
+background-image: linear-gradient(white,hsl(235,44%,89%) );
+
+height:590px;
+display: flex;
+flex-wrap: nowrap;
+padding-left:260px;
+font-family:arial,sans-serif;
+}
+.box4
+{
+padding-top:40px;
+padding-right:20px;
+font-size:20px;
+font-weight:bold;
+width:40%;
+color:hsl(215,12%,37%);
+line-height:28px;
+}
+.box5
+{
+width:60%;
+padding-left:60px;
+padding-top:0px;
+
+}
+.heading2
+{
+padding-top:0px;
+font-size:36px;
+font-weight:bold;
+color:hsl(0,0%,23%);
+padding-bottom:0px;
+}
+.line1
+{
+line-height:1px;
+font-size:19px;
+padding-top:0px;
+}
+.input2
+{
+margin-top:13px;
+}
+.input2 , .input3
+{
+
+outline:none;
+width:190px;
+height:40px;
+padding-left:10px;
+font-size:18px;
+border:1px solid hsl(0,0%,80%);
+  border-radius: 5px;
+
+}
+.input3
+{
+
+outline:none;
+margin-left:10px;
+}
+.input4
+{
+outline:none;
+margin-top:10px;
+width:395px;
+height:40px;
+padding-left:10px;
+font-size:18px;
+border:1px solid hsl(0,0%,80%);
+  border-radius: 5px;
+
+}
+
+.line2
+{
+color:hsl(0,0%,55%);
+font-weight:bold;
+font-size:17px;
+line-height:0px;
+}
+.select1 , .select2 , .select3{
+  width: 58px;
+outline:none;
+  height:30px;
+padding-left:5px;
+ border:1px solid hsl(0,0%,80%) ;
+  margin:0px;
+  background-color: white;
+}
+.forms2
+{
+margin:0px;
+display:block;
+}
+.icon1 ,.icon1:link , .icon1:visited
+{
+display:inline-block;
+}
+.info1
+{
+display:none;
+position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+z-index: 1;
+}
+.topic
+{
+display:none;
+}
+.icon1:hover  .topic
+{
+display:block;
+
+}
+.icon1:active  .info1
+{
+display:block;
+
+}
+ul
+{
+list-style-type:none;
+margin-left:0px;
+margin-left:0px;
+padding-left:10px;
+}
+li
+{
+margin-top:5px;
+vertical-align:center;
+font-size:19px;
+display:inline-block;
+
+}
+.male , .custom
+{
+margin-left:30px;
+}
+.line3
+{
+font-size:12px;
+color:hsl(0,0%,55%)
+}
+.button {
+background-image:linear-gradient(white 0.1, #4CAF50,black);
+  background-color: #4CAF50;
+  border:1px solid hsl(139, 47%, 36%);
+  color: white;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  margin-top:14px;
+  cursor: pointer;
+  width:190px;
+  height:37px;
+  border-radius:4px;
+  font-weight:bold;
+}
+</style>
+</head>
+
+
+
+
+
+
+
+
+<body>
+<div class="header">
+        <div class="box1"><h1 >facebook</h1></div>
+        <div class="box2">
+		<form class="form1">
+			<label for="email">Email or phone</label>
+			<br>
+			<input class="input1" type="text" id="email" name="email">
+		</form>
+	
+        </div>
+  	<div class="box3">
+		<form class="form1">
+			<label class="label1" style="margin-bottom:10px;" for="pass">Password</label>
+			<br>
+			<input class="input1" type="text" id="pass" name="pass">
+		</form>
+		<a class="link1" href="https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=110">Log In</a>
+			<br>
+		<a href="https://www.facebook.com/login/identify/?ctx=recover&ars=royal_blue_bar">Forgotten account?</a>
+ 	 </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="content">
+	<div class="box4">Facebook helps you connect and share with the people in your life.
+	
+	<img src="https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/7XdR1KwCifL.png" height="190px" width="530px">
+	</div>
+	<div class="box5">
+		<h1 class="heading2">Create an account</h1>
+		<span class="line1">It's quick and easy.</span>
+		<br>
+		<br>
+		<div class="forms">
+		<form class="form2">
+			<label style="margin-bottom:10px;" for="fname"></label>
+		 	<input class="input2"type="text" id="fname" placeholder="First name">
+		
+			<label style="margin-bottom:10px;" for="surname"></label>
+			<input class="input3" type="text" id="new" placeholder="Surname">
+			<br>
+			<label style="margin-bottom:10px;" for="add"></label>
+			<input class="input4" type="text" id="add" placeholder="Mobile number or email address">
+			<br>
+			<label style="margin-bottom:10px;" for="new"></label>
+			<input class="input4" type="text" id="new" placeholder="New password">
+		</form>
+		</div>
+		<p class="line2">Birthday</p>
+		<div class="forms2">
+  			<form >
+  			<select class="select1" id="11" name="11" >
+ 		 	<option >Day</option>
+ 			<option >1</option>
+  			<option >2</option>
+  			<option >3</option>
+			<option >4</option>
+			<option >5</option>
+			<option >6</option>
+			<option >7</option>
+			<option >8</option>
+			<option >9</option>
+			<option >10</option>
+			<option >11</option>
+			<option >12</option>
+			<option >13</option>
+			<option >14</option>
+			<option >15</option>
+			<option >16</option>
+			<option >17</option>
+			<option >18</option>
+			<option >19</option>
+			<option >20</option>
+			<option >21</option>
+			<option >22</option>
+			<option >23</option>
+			<option >24</option>
+			<option >25</option>
+			<option >26</option>
+			<option >27</option>
+			<option >28</option>
+			<option >29</option>
+			<option >30</option>
+			<option >31</option>
+  			</select>
+			<select class="select2" id="month" name="Month">
+			<option>Month</option>
+			<option>Jan</option>
+			<option >Feb</option>
+			<option >Mar</option>
+			<option >Apr</option>
+			<option >May</option>
+			<option >Jun</option>
+			<option >Jul</option>
+			<option >Aug</option>
+			<option >Sept</option>
+			<option >Oct</option>
+			<option >Nov</option>
+			<option >Dec</option>
+			</select>
+			
+			<select class="select3" id="year" name="year">
+			<option>Year</option>
+			<option>2020</option>
+			<option>2019</option>
+			<option >2018</option>
+			<option >2017</option>
+			<option >2016</option>
+			<option >2015</option>
+			<option >2014</option>
+			<option >2013</option>
+			<option >2012</option>
+			<option >2011</option>
+			<option >2010</option>
+			<option >2009</option>
+			<option >2008</option>
+			<option>2007</option>
+			<option>2006</option>
+			<option >2005</option>
+			<option >2004</option>
+			<option >2003</option>
+			<option >2002</option>
+			<option >2001</option>
+			<option >2000</option>
+			<option >1999</option>
+			<option >1998</option>
+			<option >1997</option>
+			<option >1996</option>
+			<option >1995</option>
+			<option >1994</option>
+			<option >1993</option>
+			<option >1992</option>
+			<option >1991</option>
+			<option >1990</option>
+			<option >1989</option>
+			<option >1988</option>
+			<option >1987</option>
+			<option >1986</option>
+			<option >1985</option>
+			<option >1984</option>
+			<option >1983</option>
+			<option >1982</option>
+			<option >1981</option>
+			<option >1980</option>
+			<option >1979</option>
+			<option >1978</option>
+			<option >1977</option>
+			<option >1976</option>
+			<option >1975</option>
+			<option >1974</option>
+			<option >1973</option>
+			<option >1972</option>
+			<option >1971</option>
+			<option >1970</option>
+			<option >1969</option>
+			<option >1968</option>
+			<option >1967</option>
+			<option >1966</option>
+			<option >1965</option>
+			<option >1964</option>
+			<option >1963</option>
+			<option >1962</option>
+			<option >1961</option>
+			<option >1960</option>
+			<option >1959</option>
+			<option >1958</option>
+			<option >1957</option>
+			<option >1956</option>
+			<option >1955</option>
+			<option >1954</option>
+			<option >1953</option>
+			<option >1952</option>
+			<option >1951</option>
+			<option >1950</option>
+			<option >1949</option>
+			<option >1948</option>
+			<option >1947</option>
+			<option >1946</option>
+			<option >1945</option>
+			<option >1944</option>
+			<option >1943</option>
+			<option >1942</option>
+			<option >1941</option>
+			<option >1940</option>
+			<option >1939</option>
+			<option >1938</option>
+			<option >1937</option>
+			<option >1936</option>
+			<option >1935</option>
+			<option >1934</option>
+			<option >1933</option>
+			<option >1932</option>
+			<option >1931</option>
+			<option >1930</option>
+			<option >1929</option>
+			<option >1928</option>
+			<option >1927</option>
+			<option >1926</option>
+			<option >1925</option>
+			<option >1924</option>
+			<option >1923</option>
+			<option >1922</option>
+			<option >1921</option>
+			<option >1920</option>
+			<option >1919</option>
+			<option >1918</option>
+			<option >1917</option>
+			<option >1916</option>
+			<option >1915</option>
+			<option >1914</option>
+			<option >1913</option>
+			<option >1912</option>
+			<option >1911</option>
+			<option >1910</option>
+			<option >1909</option>
+			<option >1908</option>
+			<option >1907</option>
+			<option >1906</option>
+			<option >1905</option>
+			</select>
+			<span class="icon1"><i class="fas fa-question-circle" style="color:hsl(0,0%,35%);"></i></span>
+			<span class="topic">click for more information</span>
+			<span class="info1"><b>Providing your date of birth</b> helps make sure that you get the right Facebook experience for your age.
+			 If you want to change who sees this, go to the About section of your Profile. For more details, please visit our Data Policy.</span>
+			</form>
+		</div>
+		<p class="line2">Gender</p>
+		<ul >
+			<li>
+				<input type="radio" id="male" name="gender" value="male">
+    
+				<label for="male">Male</label>
+			<br>
+			</li>
+			
+<li> 
+				<input type="radio" id="female" name="gender" value="female">
+
+				<label for="female">Female</label>
+			<br>
+			</li>
+
+			<li> 
+				<input type="radio" id="other" name="gender" value="\custom">
+	
+ 	       		<label for="other">Custom</label>
+			</li>
+		</ul>
+		<p class="line3">By clicking sign up,you agree to our<a style="color:hsl(220,36%,44%);" href="https://www.facebook.com/legal/terms/update"> Terms </a>,<a style="color:hsl(220,36%,44%); " href="https://www.facebook.com/about/privacy/update"> Data Policy</a> and<br> <a style="color:hsl(220,36%,44%);" href="https://www.facebook.com/policies/cookies/">Cookie Policy</a>.you may receive SMS notifications from us and <br>can opt out at any time.</p>
+		<button class="button">Sign Up</button>
+		<br><br>
+		<p style="font-size:13px;font-weight:bold;color:hsl(0,0%,40%);"><a class="a" style="font-weight:bold;font-size:13px;color:hsl(220,36%,44%);"  href="https://www.facebook.com/pages/create/?ref_type=registration_form">Create a Page</a> for a celebrity, brand or business.</p>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+
+
+
+
+
+</div>
+</body>
+</html>
